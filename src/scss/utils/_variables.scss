@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// Sets the relative width of a single grid column.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$column: '';
+
+// Sets the relative width of a single grid gutter.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$gutter: '';
+
+// Sets the total number of columns in the grid. Set with the `!global` flag.
+//
+// @type {Number}
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$grid-columns: 12 !default;
+
+// Sets the max-width property of the element that includes `outer-container()`. Set with the `!global` flag.
+//
+// @type {Number} (Unit)
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$max-width: 1200px !default;
+
+// When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
+//
+// @type {Bool}
+//
+// @example css - CSS Output
+//   html {
+//     box-sizing: border-box; }
+//
+//   *, *::after, *::before {
+//     box-sizing: inherit;
+//   }
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$border-box-sizing: true !default;
+
+//Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
+//
+//@type String
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$default-layout-direction: LTR !default;
