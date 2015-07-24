@@ -1,0 +1,19 @@
+@charset "UTF-8";
+// Visual Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@if (config-get("grider.visual-grid") == true) {
+  body:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    max-width: config-get("grider.visual-grid.max-width");
+    opacity: config-get("grider.visual-grid.opacity");
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    width: 100%;
+  }
+}

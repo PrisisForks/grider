@@ -1,0 +1,18 @@
+@charset "UTF-8";
+// Box Sizing
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@if (config-get("grider.border-box-sizing") == true) {
+  html, img {
+    box-sizing: border-box;
+  }
+
+  * {
+    &,
+    &:not(img),
+    &:after,
+    &:before {
+      box-sizing: inherit;
+    }
+  }
+}

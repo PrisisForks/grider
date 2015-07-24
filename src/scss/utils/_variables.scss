@@ -2,23 +2,23 @@
 
 // Sets the relative width of a single grid column.
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$column: '';
+@include config-set("grider.column", '', true);
 
 // Sets the relative width of a single grid gutter.
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$gutter: '';
+@include config-set("grider.gutter", '', true);
 
 // Sets the total number of columns in the grid. Set with the `!global` flag.
 //
 // @type {Number}
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$grid-columns: 12 !default;
+@include config-set("grider.grid-columns", "12", true);
 
 // Sets the max-width property of the element that includes `outer-container()`. Set with the `!global` flag.
 //
 // @type {Number} (Unit)
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$max-width: 1200px !default;
+@include config-set("grider.max-width", "1200px", true);
 
 // When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
 //
@@ -32,10 +32,10 @@ $max-width: 1200px !default;
 //     box-sizing: inherit;
 //   }
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$border-box-sizing: true !default;
+@include config-set("grider.border-box-sizing," true, true);
 
 //Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
 //
 //@type String
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-$default-layout-direction: LTR !default;
+@include config-set("grider.default-layout-direction", LTR, true);

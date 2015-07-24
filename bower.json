@@ -12,7 +12,19 @@
   ],
   "keywords": [
     "grunt",
-    "bower"
+    "bower",
+    "columns",
+    "grid",
+    "layout",
+    "media",
+    "include-media",
+    "neat",
+    "queries",
+    "sass",
+    "scss",
+    "semantic",
+    "sass-config-manager",
+    "growcss"
   ],
   "license": "MIT",
   "ignore": [
