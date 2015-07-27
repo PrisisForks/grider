@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+// Sets the relative width of a single grid gutter.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.gutter", 1%, true);
+
+// Sets the total number of columns in the grid. Set with the `!global` flag.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.grid-columns", 12, true);
+
+// Sets the max-width property of the element that includes `outer-container()`.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.max-width", 1200px, true);
+
+// Set your own class names.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.container-classs", "row", true);
+
+@include config-set("grider.column-classs.tiny", "tiny", true);
+@include config-set("grider.column-classs.small", "small", true);
+@include config-set("grider.column-classs.medium", "medium", true);
+@include config-set("grider.column-classs.large", "large", true);
+@include config-set("grider.column-classs.xlarge", "xlarge", true);
+
+@include config-set("grider.push-classs", "push", true);
+@include config-set("grider.pull-classs", "pull", true);
+
+// When set to true, it sets the box-sizing property of all elements to `border-box`.
+//
+// @example css - CSS Output
+//   html {
+//     box-sizing: border-box; }
+//
+//   *, *::after, *::before {
+//     box-sizing: inherit;
+//   }
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.border-box-sizing," true, true);
+
+//Sets the default layout direction of the grid. Can be `LTR` or `RTL`.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.default-layout-direction", LTR, true);
+
+// Is this build mobile first? Setting to ‘true’ means that all grids will be
+// 100% width if you do not apply a more specific class to them.
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.mobile-first", true, true);
+
+// Would you like push and pull classes enabled?
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.pull", false, true);
+@include config-set("grider.push", false, true);
+
+// Would you like to use grider in ie8?
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@include config-set("grider.ie8.fallback", false, true);

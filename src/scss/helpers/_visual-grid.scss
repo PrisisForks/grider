@@ -1,7 +1,7 @@
 @charset "UTF-8";
+
 // Visual Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
 @if (config-get("grider.visual-grid") == true) {
   body:before {
     content: "";

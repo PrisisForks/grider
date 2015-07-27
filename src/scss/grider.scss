@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-// Ultis
-@import "utils/variables";
+// Settings
+@import "settings/settings";
 
 // Helpers
 @import "helpers/helpers";
@@ -10,4 +10,4 @@
 @import "functions/functions";
 
 // Grid
-@import "grid/";
+@import "grid/column";
