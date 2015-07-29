@@ -14,16 +14,16 @@
 
 // Set your own class names.
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-@include config-set("grider.container-classs", "row", true);
+@include config-set("grider.container-class", "row", true);
 
-@include config-set("grider.column-classs.tiny", "tiny", true);
-@include config-set("grider.column-classs.small", "small", true);
-@include config-set("grider.column-classs.medium", "medium", true);
-@include config-set("grider.column-classs.large", "large", true);
-@include config-set("grider.column-classs.xlarge", "xlarge", true);
+@include config-set("grider.column-class.tiny", "tiny", true);
+@include config-set("grider.column-class.small", "small", true);
+@include config-set("grider.column-class.medium", "medium", true);
+@include config-set("grider.column-class.large", "large", true);
+@include config-set("grider.column-class.xlarge", "xlarge", true);
 
-@include config-set("grider.push-classs", "push", true);
-@include config-set("grider.pull-classs", "pull", true);
+@include config-set("grider.push-class", "push", true);
+@include config-set("grider.pull-class", "pull", true);
 
 // When set to true, it sets the box-sizing property of all elements to `border-box`.
 //
@@ -39,7 +39,7 @@
 
 //Sets the default layout direction of the grid. Can be `LTR` or `RTL`.
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-@include config-set("grider.default-layout-direction", LTR, true);
+@include config-set("grider.layout-direction", LTR, true);
 
 // Is this build mobile first? Setting to ‘true’ means that all grids will be
 // 100% width if you do not apply a more specific class to them.
