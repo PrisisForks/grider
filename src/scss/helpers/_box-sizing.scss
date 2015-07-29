@@ -3,7 +3,8 @@
 // Box Sizing
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 @if (config-get("grider.border-box-sizing") == true) {
-  html, img {
+  html,
+  img {
     box-sizing: border-box;
   }
 
