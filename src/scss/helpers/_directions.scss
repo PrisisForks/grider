@@ -4,7 +4,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // Find Opposite Direction
-@function opposite-direction($dir) {
+@function grider-opposite-direction($dir) {
   @if $dir == "left" {
     @return right;
   } @else if  $dir == "right" {
@@ -24,7 +24,7 @@
 }
 
 // Find Direction Name
-@function named-direction($dir) {
+@function grider-named-direction($dir) {
   @if $dir == "LTR" {
     @return left;
   } @else if $dir == "RTL" {

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+// Column gradient
+// scss-lint:disable VendorPrefixes
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin grider-column-gradient($values...) {
+  background-image: -webkit-linear-gradient(left, $values);
+  background-image: -moz-linear-gradient(left, $values);
+  background-image: -ms-linear-gradient(left, $values);
+  background-image: -o-linear-gradient(left, $values);
+  background-image: unquote("linear-gradient(to left, #{$values})");
+}

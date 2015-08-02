@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// Media Query Ranges
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// Smartphones >480px <768px
+@include config-set("size.tiny", 480, true);
+// Tablets, iPads >768px <992px
+@include config-set("size.small", 768, true);
+// Tablet landscape >992px <1200px
+@include config-set("size.medium", 992, true);
+// Desktops and laptops >1200px <1600px
+@include config-set("size.large", 1200, true);
+// Large screens >1600px <...
+@include config-set("size.xlarge", 1600, true);
+
+@include config-set("breakpoint.tiny", em(config-get("size.tiny")), true);
+@include config-set("breakpoint.small", em(config-get("size.small")), true);
+@include config-set("breakpoint.medium", em(config-get("size.medium")), true);
+@include config-set("breakpoint.large", em(config-get("size.large")), true);
+@include config-set("breakpoint.xlarge", em(config-get("size.xlarge")), true);
+
+// Creates a list of global breakpoints
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$breakpoints: (
+  'tiny': config-get("breakpoint.small"),
+  'small': config-get("breakpoint.small"),
+  'medium': config-get("breakpoint.medium"),
+  'large': config-get("breakpoint.large"),
+  'xlarge': config-get("breakpoint.xlarge")
+) !default;
